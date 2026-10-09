@@ -26,7 +26,31 @@ h1,h2,h3{font-family:'Outfit',sans-serif!important;letter-spacing:-.035em}
 .hero p{color:#d5e9dd;font-size:1.04rem;max-width:680px;margin:0}
 .hero .chip{display:inline-block;background:#ffffff1c;border:1px solid #ffffff30;border-radius:50px;padding:7px 12px;font-size:12px;margin-top:20px;color:#e4f6ec}
 [data-testid="stVerticalBlockBorderWrapper"]{border-radius:20px!important}
-[data-testid="stTextInput"] input{background:#fff;border:1px solid #d9e5dd;border-radius:13px;min-height:47px}
+[data-testid="stTextInput"] input,
+[data-testid="stTextInput"] input:focus,
+[data-testid="stTextInput"] input:active{
+  background-color:#ffffff!important;
+  color:#173b30!important;
+  -webkit-text-fill-color:#173b30!important;
+  caret-color:#173b30!important;
+  border:1px solid #b9cbbf!important;
+  border-radius:13px;
+  min-height:47px;
+  opacity:1!important;
+}
+[data-testid="stTextInput"] input::placeholder{
+  color:#64786e!important;
+  -webkit-text-fill-color:#64786e!important;
+  opacity:1!important;
+}
+[data-testid="stTextInput"] label, [data-testid="stTextInput"] label p{
+  color:#243b30!important;
+}
+[data-testid="stTextInput"] [data-baseweb="input"]{background:#fff!important;}
+[data-testid="stTextInput"] input:-webkit-autofill{
+  -webkit-text-fill-color:#173b30!important;
+  -webkit-box-shadow:0 0 0 1000px #fff inset!important;
+}
 .stButton>button[kind="primary"]{background:#d9f67c;color:#163e32;border:0;border-radius:14px;font-weight:800;min-height:51px}
 .stButton>button[kind="primary"]:hover{background:#c7eb68;color:#163e32}
 [data-testid="stMetric"]{background:white;border:1px solid #dde9df;border-radius:17px;padding:12px 18px}
